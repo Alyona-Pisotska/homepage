@@ -5,20 +5,19 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Inter, Arial, sans-serif;
     line-height: 1.5;
+    background-image: url("/assets/backgroundImg.svg");
 
-    --primary-text-color: #181820;
-    --secondary-text-color: #5c5c62;
+    --primary-text-color: #050C2e;
+    --secondary-text-color: #6a718f;
+    --main-grey-color: #bec5e7;
+    --white-color: #ffffff;
     --durability-text-color: #6a737d9c;
-    --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
 }
 
 .container {
     margin: 0 auto;
-    padding: 0 30px;
     max-width: 900px;
 }
 
@@ -38,12 +37,13 @@ body {
     margin: 50px auto;
     border: 1px solid #f5f5f5;
     box-shadow: 1px 1px 7px 7px #f5f5f5;
-    padding: 30px 0;
+    padding: 30px 50px;
     max-width: 900px;
+    background-color: var(--white-color);
 }
 
 .resume__block {
-    border-bottom: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--main-grey-color);
     padding-bottom: 30px;
     margin-bottom: 15px;
 }
@@ -76,8 +76,7 @@ body {
 .contact-info__header {
     color: var(--primary-text-color);
     margin-bottom: 15px;
-    text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
+    text-decoration-color: var(--main-grey-color);
 }
 
 .contact-info__sub-header {
@@ -96,7 +95,7 @@ body {
 }
 
 .contact-info__item {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-decoration: none;
     display: flex;
     justify-content: start;
@@ -114,7 +113,7 @@ body {
 }
 
 .contact-info__item-icon path {
-    fill: var(--icon-color);
+    fill: var(--secondary-text-color);
 }
 
 .contact-info__item-icon {
@@ -128,7 +127,7 @@ body {
     height: 100px;
     object-fit: cover;
     border: 3px solid;
-    border-color: var(--text-decoration-color);
+    border-color: var(--main-grey-color);
 }
 
 .intro {
@@ -149,11 +148,11 @@ body {
 }
 
 .intro__icon path {
-    fill: var(--text-decoration-color);
+    fill: var(--main-grey-color);
 }
 
 .intro_text {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: justify;
 }
 
@@ -164,7 +163,7 @@ body {
 }
 
 .skills__text {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: justify;
 }
 
@@ -188,7 +187,7 @@ body {
 
 .experiences__company-header-name {
     color: var(--primary-text-color);
-    text-decoration-color: var(--text-decoration-color);
+    text-decoration-color: var(--main-grey-color);
     text-decoration-line: underline;
     text-align: left;
     margin-bottom: 20px;
@@ -213,7 +212,7 @@ body {
 }
 
 .experiences__company-project-responsibilities {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     padding-left: 20px;
 }
 
@@ -245,7 +244,7 @@ body {
 }
 
 .additional-info__education-university-name {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 .additional-info__languages {
@@ -259,5 +258,5 @@ body {
 }
 
 .additional-info__languages-item {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
