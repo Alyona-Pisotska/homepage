@@ -1,219 +1,219 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Inter, Arial, sans-serif;
-    line-height: 1.5;
-    background-image: url("/assets/backgroundImg.svg");
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.5;
+  background-image: url("/assets/backgroundImg.svg");
 
-    --primary-text-color: #050C2e;
-    --secondary-text-color: #6a718f;
-    --main-blue-color: #2f50ff;
-    --main-grey-color: #bec5e7;
-    --white-color: #ffffff;
-    --durability-text-color: #6a737d9c;
-    --border-color: #f5f5f5;
-    --margin-bottom: 15px;
+  --primary-text-color: #050C2e;
+  --secondary-text-color: #6a718f;
+  --main-blue-color: #2f50ff;
+  --main-grey-color: #bec5e7;
+  --white-color: #fff;
+  --durability-text-color: #6a737d9c;
+  --border-color: #f5f5f5;
+  --margin-bottom: 15px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 900px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .fh {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .resume {
-    margin: 50px auto;
-    border: 1px solid var(--border-color);
-    box-shadow: 1px 1px 7px 7px var(--border-color);
-    padding: 30px 50px;
-    max-width: 900px;
-    background-color: var(--white-color);
+  margin: 50px auto;
+  border: 1px solid var(--border-color);
+  box-shadow: 1px 1px 7px 7px var(--border-color);
+  padding: 30px 50px;
+  max-width: 900px;
+  background-color: var(--white-color);
 }
 
 .resume__block {
-    border-bottom: 3px solid var(--main-grey-color);
-    padding-bottom: 30px;
-    margin-bottom: var(--margin-bottom);
+  border-bottom: 3px solid var(--main-grey-color);
+  padding-bottom: 30px;
+  margin-bottom: var(--margin-bottom);
 }
 
 @media screen and (max-width: 576px) {
 
-    .main-info,
-    .contact_info_container {
-        flex-direction: column;
-    }
+  .main-info,
+  .contact_info_container {
+    flex-direction: column;
+  }
 
-    .contact_info_container {
-        align-items: center;
-    }
+  .contact_info_container {
+    align-items: center;
+  }
 
-    .contact-info__block:not(:last-child) {
-        margin-bottom: var(--margin-bottom);
-    }
+  .contact-info__block:not(:last-child) {
+    margin-bottom: var(--margin-bottom);
+  }
 
-    .experiences {
-        margin-right: 0;
-    }
+  .experiences {
+    margin-right: 0;
+  }
 }
 
 .contact-info__header,
 .contact-info__sub-header {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .contact-info__header {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 .contact-info__sub-header {
-    color: var(--secondary-text-color);
-    margin-bottom: 30px;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
 }
 
 .contact-info__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contact-info__block--center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .contact-info__item {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    display: flex;
-    justify-content: start;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
 }
 
 .contact-info__item:not(:last-child) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-info__item-icon-wrapper {
-    margin-right: 10px;
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-right: 10px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info__item-icon path {
-    fill: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
 }
 
 .contact-info__item-icon {
-    height: 1.1428rem;
+  height: 1.1428rem;
 }
 
 .contact-info__avatar {
-    border-radius: 12%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid;
-    border-color: var(--main-grey-color);
+  border-radius: 12%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid;
+  border-color: var(--main-grey-color);
 }
 
 .intro_text {
-    color: var(--primary-text-color);
-    text-align: justify;
+  color: var(--primary-text-color);
+  text-align: justify;
 }
 
 .skills__header {
-    color: var(--secondary-text-color);
-    text-align: center;
-    margin-bottom: var(--margin-bottom);
-    text-transform: uppercase;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: var(--margin-bottom);
+  text-transform: uppercase;
 }
 
 .skills__text {
-    color: var(--primary-text-color);
-    text-align: justify;
-    margin-left: 15px;
-    padding-left: 20px;
+  color: var(--primary-text-color);
+  text-align: justify;
+  margin-left: 15px;
+  padding-left: 20px;
 }
 
 .experiences__header {
-    color: var(--secondary-text-color);
-    text-align: center;
-    margin-bottom: var(--margin-bottom);
-    text-transform: uppercase;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: var(--margin-bottom);
+  text-transform: uppercase;
 }
 
 .experiences__company:not(:last-child) {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .experiences__company-header {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .experiences__company-header-durability {
-    color: var(--durability-text-color);
-    font-size: 15px;
+  color: var(--durability-text-color);
+  font-size: 15px;
 }
 
 .experiences__company-header-name {
-    color: var(--primary-text-color);
-    text-decoration-color: var(--main-grey-color);
-    text-decoration-line: underline;
-    text-align: left;
+  color: var(--primary-text-color);
+  text-decoration-color: var(--main-grey-color);
+  text-decoration-line: underline;
+  text-align: left;
 }
 
 .experiences__company-project {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .experiences__company-project-responsibilities {
-    color: var(--primary-text-color);
-    padding-left: 20px;
+  color: var(--primary-text-color);
+  padding-left: 20px;
 }
 
 .experiences__company-project-responsibility {
-    text-decoration: none;
-    color: var(--main-blue-color);
+  text-decoration: none;
+  color: var(--main-blue-color);
 }
 
 .additional-info__education {
-    margin-bottom: var(--margin-bottom);
+  margin-bottom: var(--margin-bottom);
 }
 
 .additional-info__education-header {
-    color: var(--secondary-text-color);
-    text-align: center;
-    margin-bottom: var(--margin-bottom);
-    text-transform: uppercase;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: var(--margin-bottom);
+  text-transform: uppercase;
 }
 
 .additional-info__education-university-speciality-name {
-    text-decoration-color: var(--main-grey-color);
-    text-decoration-line: underline;
+  text-decoration-color: var(--main-grey-color);
+  text-decoration-line: underline;
 }
 
 .additional-info__education-university-durability {
-    color: var(--durability-text-color);
-    font-size: 15px;
+  color: var(--durability-text-color);
+  font-size: 15px;
 }
 
 .additional-info__education-university-speciality {
-    color: var(--primary-text-color);
-    margin-bottom: 10px;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 
 .additional-info__education-university-name {
-    color: var(--primary-text-color);
-    margin-left: 15px;
-    padding-left: 20px;
+  color: var(--primary-text-color);
+  margin-left: 15px;
+  padding-left: 20px;
 }
